@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container px-sm-3 mt-sm-2" style="width: 25rem;">
+      
+      <div class="bg-light border border-secondary rounded">
+        <h6 class="ml-sm-1">Calculadora</h6>
+      <div class="row mb-sm-2 px-sm-3 mt-sm-2">
+        <textarea class="rounded" id="visor"></textarea>
+      </div>
+
+      <div class="row mb-sm-2 px-sm-2">
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="sete" onclick="pressNum(this)">7</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" onclick="pressNum(this)">8</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" onclick="pressNum(this)">9</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-info btn-calc" id="" onclick="pressOperador(this)">*</button>
+        </div>
+      </div>
+
+      <div class="row mb-sm-2 px-sm-2">
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" onclick="pressNum(this)">4</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" value="5" onclick="pressNum(this)">5</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" value="6" onclick="pressNum(this)">6</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-info btn-calc" id="" value="/" onclick="pressOperador(this)">/</button>
+        </div>
+      </div>
+
+      <div class="row mb-sm-2 px-sm-2">
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" value="1" onclick="pressNum(this)">1</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" value="2" onclick="pressNum(this)">2</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" value="3" onclick="pressNum(this)">3</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-info btn-calc" id="" value="+" onclick="pressOperador(this)">+</button>
+        </div>
+      </div>
+
+      <div class="row mb-sm-2 px-sm-2">
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" onclick="pressNum(this)">0</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-secondary btn-calc" id="" onclick="pressNum(this)">,</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-danger btn-calc" id=""  onclick="limparTudo()">C</button>
+        </div>
+        <div class="col-sm">
+          <button class="btn-lg btn-info btn-calc" id="" onclick="pressOperador(this)">-</button>
+        </div>
+      </div>
+      <div class="row mb-sm-2 mx-sm-1">
+      <button class="btn-lg btn-warning btn-igual" id="" onclick="pressIgual()">=</button>
+      </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
